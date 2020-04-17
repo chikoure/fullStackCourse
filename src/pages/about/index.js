@@ -3,7 +3,7 @@ import React from "react"
 function about() {
   return (
     <div>
-      <form action="/sucess" name="contant" method="post" data-netlify="true">
+      <form action="/sucess" name="contact" method="post" data-netlify="true">
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input type="email" name="email"></input>
