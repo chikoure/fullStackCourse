@@ -16,6 +16,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://determined-goodall-cd8773.netlify.app/`, // required!
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
