@@ -20,3 +20,11 @@ collections:
           widget: markdown,
         }
       - { name: image, required: true, label: Image, widget: image }
+      - { name: sku, required: false, label: Sku}
+      - { name: path, required: true, label: Path}
+      - { name: promo, widget: boolean, label: Promo, default: false}
+      - name: category
+            required: true
+            label: Category
+            widget: "select"
+            options: ["Web developpement", "Mobile developpement", "Data bases"]
