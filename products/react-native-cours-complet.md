@@ -1,5 +1,5 @@
 ---
-title: REACT NATIVE - COURS COMPLET
+title: GRAPHQL - COURS COMPLET
 price: "50"
 description: >-
   
@@ -8,5 +8,5 @@ description: >-
 image: /assets/0-1-.jpg
 path: /produits
 promo: false
-category: Mobile developpement
+category: Data bases
 ---
