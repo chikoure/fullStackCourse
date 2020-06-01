@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 function products({ data }) {
   console.log("data", data)
@@ -12,7 +14,12 @@ function products({ data }) {
       </ul>
     )
   })
-  return <div>{products}</div>
+  return (
+    <Layout>
+      <SEO title="products"></SEO>
+      <div>{products}</div>
+    </Layout>
+  )
 }
 
 export const query = graphql`
