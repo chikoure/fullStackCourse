@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import ToolBar from "../components/Navigation/Toolbar/ToolBar"
 import Header from "./header"
 import Footer from "./Footer/footer"
 import "./layout.css"
@@ -26,7 +26,7 @@ const Layout = props => {
 
   return (
     <>
-      <Header></Header>
+      <ToolBar></ToolBar>
       <div
         style={{
           margin: `0 auto`,
