@@ -12,6 +12,9 @@ import ToolBar from "../components/Navigation/Toolbar/ToolBar"
 import Header from "./header"
 import Footer from "./Footer/footer"
 import "./layout.css"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 const Layout = props => {
   const data = useStaticQuery(graphql`
@@ -27,15 +30,15 @@ const Layout = props => {
   return (
     <>
       <ToolBar></ToolBar>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{props.children}</main>
-      </div>
+     
+      <Container className='bg-light m-0 p-0' fluid={true}>
+        <Row className='justify-content-center'>
+          <Col md={8} >
+            {props.children}
+          </Col>
+        </Row>
+      </Container>
+     
       <Footer></Footer>
     </>
   )

@@ -21,10 +21,26 @@ collections:
         }
       - { name: image, required: true, label: Image, widget: image }
       - { name: sku, required: false, label: Sku}
-      - { name: path, required: true, label: Path}
+      - { name: slug, required: true, label: Slug}
       - { name: promo, widget: boolean, label: Promo, default: false}
       - name: category
-            required: true
-            label: Category
-            widget: "select"
-            options: ["Web developpement", "Mobile developpement", "Data bases"]
+        required: true
+        label: Category
+        widget: "select"
+        options: ["Web developpement", "Mobile developpement", "Data bases"]
+  - name: article
+    label: Article
+    folder: articles
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre }
+      - {
+          name: description,
+          required: true,
+          label: Description,
+          widget: markdown,
+        }
+      - { name: image, required: true, label: Image, widget: image }
+      - { name: slug, required: true, label: Slug }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Auteur, required: true }
